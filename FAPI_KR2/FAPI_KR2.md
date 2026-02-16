@@ -448,7 +448,7 @@ Accept-Language: en-US,en;q=0.9,es;q=0.8
 
 **Ответ:**
 
-```json
+```cmd
 {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
     "Accept-Language": "en-US,en;q=0.9,es;q=0.8"
@@ -459,7 +459,7 @@ Accept-Language: en-US,en;q=0.9,es;q=0.8
 
 **Запрос:**
 
-```json
+```cmd
 GET /info HTTP/1.1
 Host: example.com
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)
