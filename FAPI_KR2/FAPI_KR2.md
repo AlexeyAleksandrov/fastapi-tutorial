@@ -439,7 +439,7 @@ if not ...:
 
 **Запрос:**
 
-```json
+```bash
 GET /headers HTTP/1.1
 Host: example.com
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)
@@ -448,7 +448,7 @@ Accept-Language: en-US,en;q=0.9,es;q=0.8
 
 **Ответ:**
 
-```cmd
+```json
 {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
     "Accept-Language": "en-US,en;q=0.9,es;q=0.8"
@@ -459,7 +459,7 @@ Accept-Language: en-US,en;q=0.9,es;q=0.8
 
 **Запрос:**
 
-```cmd
+```bash
 GET /info HTTP/1.1
 Host: example.com
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)
@@ -482,7 +482,7 @@ Accept-Language: en-US,en;q=0.9,es;q=0.8
 
 - Дополнительно, в заголовках ответа должен присутствовать ключ **X-Server-Time** с текущей датой и временем, например:
 
-```json
+```bash
 X-Server-Time: 2025-04-16T12:34:56
 ```
 
