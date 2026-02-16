@@ -8,7 +8,7 @@
 |СЕМЕСТР|4 семестр, 2025/2026 уч. год|
 
 Ссылка на материал: <br>
-https://github.com/dv0retsky/fastapi-tutorial/blob/main/FAPI_KR1/FAPI_KR1.md
+https://github.com/dv0retsky/fastapi-tutorial/blob/main/FAPI_KR2/FAPI_KR2.md
 
 ---
 
@@ -196,7 +196,7 @@ POST-запрос в `/login` с данными формы/JSON:
 
 GET-запрос к `/user` с помощью файла cookie "`session_token`":
 
-```json
+```bash
 session_token: "abc123xyz456"
 ```
 
@@ -204,7 +204,7 @@ session_token: "abc123xyz456"
 
 GET-запрос к `/user` без файла cookie "`session_token`" или с недопустимым файлом cookie, например:
 
-```json
+```bash
 session_token: "invalid_token_value"
 ```
 
@@ -374,7 +374,7 @@ def example(response: Response):
 
 GET-запрос к `/headers` со следующими заголовками:
 
-```json
+```bash
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36
 Accept-Language: en-US,en;q=0.9,es;q=0.8
 ```
