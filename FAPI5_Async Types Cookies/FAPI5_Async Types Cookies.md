@@ -16,6 +16,10 @@ https://github.com/dv0retsky/fastapi-tutorial/blob/main/FAPI5_Async%20Types%20Co
 
 На данном занятии мы рассмотрим дополнительные типы данных, немного затронем асинхронность при обработке запросов, а также посмотрим на различные типы файлов cookie, которые можно использовать для повышения функциональности и безопасности ваших приложений **FastAPI**.
 
+<div align="center">
+  <img alt="Project Demo" src="./mygif/gif5-1.gif" />
+</div>
+
 ## Дополнительные типы данных
 
 До сих пор для аннотации типов вы использовали простые типы данных, такие как:
@@ -529,6 +533,10 @@ def root(response: Response):
     response.headers["Secret-Code"] = "123459"
     return {"message": "Hello from my api"}
 ```
+
+<div align="center">
+  <img alt="Project Demo" src="./mygif/gif5-2.gif" />
+</div>
 
 ---
 
