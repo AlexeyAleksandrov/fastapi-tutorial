@@ -8,7 +8,7 @@
 |СЕМЕСТР|4 семестр, 2025/2026 уч. год|
 
 Ссылка на материал: <br>
-https://github.com/dv0retsky/fastapi-tutorial/blob/main/FAPI11_Testing/FAPI11_Testing.md
+https://github.com/dv0retsky/fastapi-tutorial/blob/main/FAPI12_Integration/FAPI12_Integration.md
 
 ---
 
