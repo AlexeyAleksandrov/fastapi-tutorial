@@ -8,7 +8,7 @@
 |СЕМЕСТР|4 семестр, 2025/2026 уч. год|
 
 Ссылка на материал: <br>
-https://github.com/dv0retsky/fastapi-tutorial/blob/main/FAPI13_Implementation/FAPI13_Implementation.md
+https://github.com/dv0retsky/fastapi-tutorial/blob/main/FAPI14_WebSocket/FAPI14_WebSocket.md
 
 ---
 
