@@ -71,9 +71,12 @@ async def get_datetime(dt: datetime, day: date, t: time):
 Пример:
 
 ```python
+from fastapi import Query
+
 @app.get("/unique-items/")
-async def get_unique_items(items: frozenset):
-    return {"unique_items": items}
+async def get_unique_items(items: list[str] = Query(default=[])):
+    unique_items = frozenset(items)
+    return {"unique_items": list(unique_items)}
 ```
 
 ### Decimal
@@ -97,8 +100,10 @@ async def get_price(price: Decimal):
 Пример:
 
 ```python
+from fastapi import Body
+
 @app.post("/upload/")
-async def upload_file(file: bytes):
+async def upload_file(file: bytes = Body()):
     return {"file_size": len(file)}
 ```
 
