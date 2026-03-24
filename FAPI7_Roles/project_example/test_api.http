@@ -1,0 +1,81 @@
+### логин от имени администратора
+POST http://localhost:8000/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "adminpass"
+}
+
+> {%
+    client.global.set("admin_token", response.body.access_token);
+%}
+
+###
+
+### логин от имени обычного пользователя
+POST http://localhost:8000/login
+Content-Type: application/json
+
+{
+  "username": "user",
+  "password": "userpass"
+}
+
+> {%
+    client.global.set("user_token", response.body.access_token);
+%}
+
+###
+
+### попытка логина с неверными данными
+POST http://localhost:8000/login
+Content-Type: application/json
+
+{
+  "username": "hacker",
+  "password": "wrongpass"
+}
+
+###
+
+### доступ к странице администратора (от имени admin) - успешно
+GET http://localhost:8000/admin
+Authorization: Bearer {{admin_token}}
+
+###
+
+### доступ к странице администратора (от имени user) - ошибка доступа
+GET http://localhost:8000/admin
+Authorization: Bearer {{user_token}}
+
+###
+
+### доступ к странице пользователя (от имени user) - успешно
+GET http://localhost:8000/user
+Authorization: Bearer {{user_token}}
+
+###
+
+### доступ к странице пользователя (от имени admin) - успешно (admin имеет доступ везде)
+GET http://localhost:8000/user
+Authorization: Bearer {{admin_token}}
+
+###
+
+### информация о текущем пользователе admin
+GET http://localhost:8000/about_me
+Authorization: Bearer {{admin_token}}
+
+###
+
+### информация о текущем пользователе user
+GET http://localhost:8000/about_me
+Authorization: Bearer {{user_token}}
+
+###
+
+### попытка доступа без токена - ошибка авторизации
+GET http://localhost:8000/about_me
+
+###
