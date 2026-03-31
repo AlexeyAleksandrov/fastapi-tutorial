@@ -4,7 +4,7 @@
 |ИНСТИТУТ|ИПТИП|
 |КАФЕДРА|Индустриального программирования|
 |ВИД УЧЕБНОГО МАТЕРИАЛА|Методические указания к практическим занятиям|
-|ПРЕПОДАВАТЕЛЬ|Дворецкий Артур Геннадьевич|
+|ПРЕПОДАВАТЕЛЬ|Дворецкий Артур Геннадьевич, Александров Алексей Сергеевич|
 |СЕМЕСТР|4 семестр, 2025/2026 уч. год|
 
 Ссылка на материал: <br>
@@ -272,9 +272,7 @@ curl -H "Authorization: Bearer {TOKEN}" http://localhost:8000/admin
 curl -H "Authorization: Bearer {TOKEN}" http://localhost:8000/user
 ```
 
-<div align="center">
-  <img alt="Project Demo" src="./mygif/gif7-2.gif" />
-</div>
+---
 
 Теперь у вас есть базовое понимание, как реализовать **RBAC** в **FastAPI**, и вы можете адаптировать эту систему под свои нужды.
 
@@ -600,8 +598,12 @@ curl -X POST -H "Authorization: Bearer {TOKEN}" http://localhost:8000/users
 }
 ```
 
+<div align="center">
+  <img alt="Project Demo" src="./mygif/gif7-2.gif" />
+</div>
+
 Теперь у вас есть **продвинутая система RBAC** на основе разрешений, которая легко масштабируется и обеспечивает гибкий контроль доступа! 🎉
 
 ---
 
-<div align="center"> Made with ❤️ by <b>dv0retsky</b> </div>
+<div align="center"> Made with ❤️ by <b>dv0retsky & AlexeyAleksandrov</b> </div>
